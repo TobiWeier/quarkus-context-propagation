@@ -8,7 +8,7 @@ Steps for reproducing
     docker-compose up -d
     mvn clean quarkus:dev
 
-The cosole output shows, that both message receiving controllers use the same injected (@RequestScoped)
+The console output shows, that both message receiving controllers use the same injected (@RequestScoped)
 ContextHolder object. 
 
 If this injected object is used for storing data during the request, the parallel message processing influences 
