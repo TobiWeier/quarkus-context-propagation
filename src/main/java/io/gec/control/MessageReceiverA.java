@@ -16,6 +16,7 @@ public class MessageReceiverA {
     @Inject
     ContextHolder context;
 
+    @ClearContext
     @Incoming("iotos-test-topic-a")
     @Blocking
     @OnOverflow(OnOverflow.Strategy.LATEST)
